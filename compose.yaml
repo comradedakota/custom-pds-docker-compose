@@ -21,12 +21,12 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /opt/pds
+        source: /pds
         target: /pds
     ports:
       - '40390:3000'
     env_file:
-      - /opt/pds/pds.env
+      - /pds/pds.env
 #  watchtower:
 #    container_name: watchtower
 #    image: containrrr/watchtower:latest
