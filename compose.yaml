@@ -24,8 +24,6 @@ services:
         source: /opt/pds
         target: /pds
     ports:
-      - '40388:80'
-      - '40389:443'
       - '40390:3000'
     env_file:
       - /opt/pds/pds.env
